@@ -11,20 +11,17 @@ Alphaware Blog Application is a social media platform where users can create pos
 
 ## Features
 
-- User registration and login
+- User registration 
 - User roles (admin and user)
 - Create, read, update, and delete (CRUD) operations for posts
 - Create, read, update, and delete (CRUD) operations for comments
 - Manage categories for posts
 - View posts created on the current day
-- Token-based authentication using JWT
 - Role-based access control
 
 ## Technologies Used
 
 - Spring Boot: Backend framework for building the application
-- Spring Security: Provides authentication and authorization features
-- JWT (JSON Web Tokens): Token-based authentication mechanism
 - Hibernate: ORM framework for interacting with the database
 - MySQL: Relational database management system
 - Swagger: API documentation tool for documenting RESTful APIs
@@ -34,9 +31,7 @@ Alphaware Blog Application is a social media platform where users can create pos
 ## API Endpoints
 
 ### User Endpoints
-
-- **POST** `/api/user/register`: Register a new user.
-- **POST** `/api/user/login`: Log in with existing credentials.
+- **POST** `/api/posts/register`: Create a new user.
 - **GET** `/api/user/{id}`: Get user details by ID.
 - **PUT** `/api/user/{id}`: Update user details.
 - **DELETE** `/api/user/{id}`: Delete user.
@@ -79,10 +74,8 @@ Alphaware Blog Application is a social media platform where users can create pos
 ## Usage
 
 1. Register a new user using the `/api/user/register` endpoint.
-2. Log in with the registered user using the `/api/user/login` endpoint to obtain an authentication token.
-3. Use the obtained token to access protected endpoints that require authentication.
-4. Explore the various endpoints to create, read, update, and delete posts, comments, and categories.
-5. Use the Swagger documentation for detailed information on each endpoint.
+2. Explore the various endpoints to create, read, update, and delete posts, comments, and categories.
+3. Use the Swagger documentation for detailed information on each endpoint.
 
 
 
